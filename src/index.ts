@@ -45,3 +45,23 @@ const me2: Required<Person> = {
 };
 
 console.log("Me", me2);
+
+let fruits: string[] = ["apple", "banana", "orange"];
+let vegetables: Array<string> = ["carrot", "spei", "broccoli"];
+console.log(typeof fruits);
+console.log(typeof vegetables);
+
+let mixed: (string | number)[] = [1, "apple", "banana", 2];
+console.log(typeof mixed);
+
+let anyType: any = "Hello";
+anyType = 123;
+console.log(typeof anyType);
+
+let person: [number, string, boolean] = [1, "John", true];
+console.log(typeof person);
+console.log(person.entries());
+person.push(2);
+console.log(person);
+person.unshift("Duma");
+console.log(person);

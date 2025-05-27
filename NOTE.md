@@ -69,3 +69,16 @@ tsc --init
   - `number`
   - `boolean`
   - `any`
+  - `mixed`
+
+```TypeScript
+let mixed: (string | number)[] = [1, "apple", "banana", 2]
+```
+
+- Tuple type
+
+```TypeScript
+let person: [number, string, boolean] = [1, "John", false];
+// Cannot modify like add more
+// Cannot change order or variable input ex. (number, string, boolean)
+```

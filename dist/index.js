@@ -1,5 +1,5 @@
 "use strict";
-let num = 123;
+let num = 123456;
 let text = "Hello World";
 console.log("This is the number : " + num);
 console.log(typeof num);
@@ -14,7 +14,7 @@ console.log("the result of sum: " +
         return sum;
     }));
 console.log("the result of multiply: " +
-    math(new Array(10, 20, 30, 40), (a) => {
+    math([10, 20, 30, 40, 50, 60], (a) => {
         let mul = 1;
         a.forEach((value) => (mul *= value));
         return mul;
@@ -30,4 +30,8 @@ const me2 = {
     age: 30,
     isMarried: true,
 };
-console.log("Me", JSON.stringify(me));
+console.log("Me", me2);
+let fruits = ["apple", "banana", "orange"];
+let vegetables = ["carrot", "spei", "broccoli"];
+console.log(typeof fruits);
+console.log(typeof vegetables);
